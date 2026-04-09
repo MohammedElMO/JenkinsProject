@@ -53,4 +53,9 @@ class DietPlannerTest {
 	void should_pass_as_well() {
 		assertEquals(1, 1, "Jenkins integration test should always pass");
 	}
+	
+	@Test
+	void should_pass_as_well_2() {
+		assertEquals(1, 1, "Jenkins integration test should always pass");
+	}
 }
