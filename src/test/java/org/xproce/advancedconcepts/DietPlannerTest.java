@@ -1,6 +1,8 @@
 package org.xproce.advancedconcepts;
 
 import org.junit.jupiter.api.AfterEach;
+import static org.junit.jupiter.api.Assertions.assertAll;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.RepeatedTest;
 import org.junit.jupiter.api.Test;
@@ -8,9 +10,6 @@ import org.xproce.Coder;
 import org.xproce.DietPlan;
 import org.xproce.DietPlanner;
 import org.xproce.Gender;
-
-import static org.junit.jupiter.api.Assertions.assertAll;
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class DietPlannerTest {
 
@@ -43,5 +42,10 @@ class DietPlannerTest {
                 () -> assertEquals(expected.getProtein(), actual.getProtein()),
                 () -> assertEquals(expected.getCalories(), actual.getCalories())
         );
+    }
+
+    @Test
+    void should_pass() {
+        assertEquals(1, 1, "Jenkins integration test should always pass");
     }
 }
